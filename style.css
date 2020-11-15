@@ -1,0 +1,58 @@
+            .inputs-block {
+                display: flex;
+                width: 100%;
+                background-color: #d4b2cf;
+                justify-content: space-around;
+            }
+            
+            .main-wrapper {
+                background-color: rgb(124, 140, 209);
+                height: 100vh;
+                width: 100%;
+            }
+            
+            .iputs-block-column {
+                display: flex;
+                flex-direction: column;
+                height: 60vh;
+            }
+            
+            .input {
+                display: block;
+                width: 180px;
+                margin-bottom: 50px;
+                margin-right: auto;
+            }
+            
+            h1 {
+                color: white;
+                font-size: 48px;
+                text-align: center;
+            }
+            
+            h6 {
+                color: white;
+                font-size: 24px;
+                text-align: center;
+            }
+            
+            .input {
+                height: 40px;
+            }
+            
+            .total {
+                height: 35px;
+                width: 180px;
+                margin-bottom: 50px;
+                margin-right: auto;
+                display: block;
+            }
+            
+            .range-block,
+            .result-block {
+                background-color: rgb(124, 140, 209);
+            }
+            
+            body {
+                background-color: rgb(153, 161, 197)
+            }
