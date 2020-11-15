@@ -5,6 +5,10 @@
                 justify-content: space-around;
             }
             
+            .inputs-block h6 {
+                color: blue;
+            }
+            
             .main-wrapper {
                 background-color: rgb(124, 140, 209);
                 height: 100vh;

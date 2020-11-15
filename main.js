@@ -1,20 +1,22 @@
 //доходы
 const incomeSalary = document.getElementById('income-salary'),
-    incomeFreelance = document.getElementById('income-freelance'),
-    incomeExtra1 = document.getElementById('income-extra-1'),
-    incomeExtra2 = document.getElementById('income-extra-2');
+    incomeOther = document.getElementById('income-other');
+// incomeExtra1 = document.getElementById('income-extra-1'),
+// incomeExtra2 = document.getElementById('income-extra-2');
 
 //расходы
-const costsFlat = document.getElementById('costs-flat'),
+const costsFood = document.getElementById('costs-food'),
     costsHouseServices = document.getElementById('costs-house-services'),
     costsTransport = document.getElementById('costs-transport'),
-    costsCredit = document.getElementById('costs-credit');
+    costsClothes = document.getElementById('costs-clothes'),
+    costsVacation = document.getElementById('costs-vacation');
+
 //выходящие данные
 const totatlMonthInput = document.getElementById('total-month'),
     totalDayInput = document.getElementById('total-day'),
-    totalYearInput = document.getElementById('total-year');
+    totalHalfYearInput = document.getElementById('total-halfyear');
 
-let totalMonth, totalDay, totalYear;
+let totalMonth, totalDay, totalHalfYear;
 //moneyBox
 const moneyBoxRange = document.getElementById('money-box-range'),
     accumulationInput = document.getElementById('accumulation'),
@@ -32,12 +34,12 @@ for (input of inputs) {
         calculaionPrecents(); //дописали чтоб при изменении инпута снова менялся процент
     })
 }
-const strToNum = str => str.value ? parseInt(str.value) : 0
+const strToNum = str => str.value ? parseInt(str.value) : 0 //функция для преобразования строки в число
 const countingAvailableMoney = () => {
-    const totalPerMonth = strToNum(incomeSalary) + strToNum(incomeFreelance) + strToNum(incomeExtra1) + strToNum(incomeExtra2);
+    const totalPerMonth = strToNum(incomeSalary) + strToNum(incomeOther);
     //console.log(incomeSalary.value) //будет получаеться строка и строки буду конкатенироваться поэтому нужна доп фукнция
     //console.log(totalPerMonth); проверка делается
-    const totalCosts = strToNum(costsFlat) + strToNum(costsHouseServices) + strToNum(costsTransport) + strToNum(costsCredit);
+    const totalCosts = strToNum(costsFood) + strToNum(costsHouseServices) + strToNum(costsTransport) + strToNum(costsClothes) + strToNum(costsVacation);
 
     totalMonth = totalPerMonth - totalCosts;
     //console.log(totalMonth); //проверили чтоб отправить в инпут ниже
@@ -61,6 +63,6 @@ const calculaionPrecents = () => {
     totalDay = (spend.value / 30).toFixed();
     totalDayInput.value = totalDay;
 
-    totalYear = accumulation * 12;
-    totalYearInput.value = totalYear;
+    totalHalfYear = accumulation * 6;
+    totalHalfYearInput.value = totalHalfYear;
 }
