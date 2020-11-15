@@ -1,62 +1,77 @@
-            .inputs-block {
-                display: flex;
-                width: 100%;
-                background-color: #d4b2cf;
-                justify-content: space-around;
-            }
-            
-            .inputs-block h6 {
-                color: blue;
-            }
-            
-            .main-wrapper {
-                background-color: rgb(124, 140, 209);
-                height: 100vh;
-                width: 100%;
-            }
-            
-            .iputs-block-column {
-                display: flex;
-                flex-direction: column;
-                height: 60vh;
-            }
-            
-            .input {
-                display: block;
-                width: 180px;
-                margin-bottom: 50px;
-                margin-right: auto;
-            }
-            
-            h1 {
-                color: white;
-                font-size: 48px;
-                text-align: center;
-            }
-            
-            h6 {
-                color: white;
-                font-size: 24px;
-                text-align: center;
-            }
-            
-            .input {
-                height: 40px;
-            }
-            
-            .total {
-                height: 35px;
-                width: 180px;
-                margin-bottom: 50px;
-                margin-right: auto;
-                display: block;
-            }
-            
-            .range-block,
-            .result-block {
-                background-color: rgb(124, 140, 209);
-            }
-            
-            body {
-                background-color: rgb(153, 161, 197)
-            }
+                            .inputs-block {
+                                display: flex;
+                                width: 100%;
+                                background-color: #d4b2cf;
+                                justify-content: space-around;
+                            }
+                            
+                            .inputs-block h6 {
+                                color: blue;
+                                margin-bottom: 0;
+                                margin-top: 0;
+                            }
+                            
+                            .main-wrapper {
+                                background-color: rgb(124, 140, 209);
+                                width: 100%;
+                                height: 100vh;
+                            }
+                            
+                            .inputs-wrapper {
+                                text-align: center;
+                            }
+                            
+                            .iputs-block-column {
+                                display: flex;
+                                flex-direction: column;
+                                width: 33%;
+                                justify-content: center;
+                            }
+                            
+                            .input {
+                                display: block;
+                                margin-bottom: 15px;
+                                margin-right: auto;
+                                margin-left: auto;
+                            }
+                            
+                            .input:hover {
+                                border-bottom: cornflowerblue;
+                            }
+                            
+                            h1 {
+                                color: white;
+                                font-size: 48px;
+                                text-align: center;
+                                margin-bottom: 0;
+                                margin-top: 0;
+                            }
+                            
+                            h6 {
+                                color: white;
+                                font-size: 24px;
+                                text-align: center;
+                                margin-bottom: 0;
+                                margin-top: 0;
+                            }
+                            
+                            .input {
+                                height: 40px;
+                            }
+                            
+                            .total {
+                                height: 35px;
+                                width: 180px;
+                                margin-bottom: 50px;
+                                margin-right: auto;
+                                display: block;
+                            }
+                            
+                            .range-block,
+                            .result-block {
+                                background-color: rgb(124, 140, 209);
+                            }
+                            
+                            body {
+                                background-color: rgb(153, 161, 197)
+                            }
